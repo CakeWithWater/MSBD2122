@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginxtest
+  namespace: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginxtest
+  template:
+    metadata:
+      labels:
+        app: nginxtest
+    spec:
+      containers:
+      - name: nginxtest
+        image: hzhuay/testnginx:v2
+        ports:
+        - containerPort: 80
+---
+#service版本
+apiVersion: v1
+#这个表示资源类型我们创建的是Service
+kind: Service
+metadata: #这个里面定义的是Service中我们创建的对象信息
+  #对象名称
+  name: nginxtest
+  #元数据名称空间
+  namespace: frontend
+  labels:
+    app: nginxtest
+spec: #下面定义service的详细信息
+  #类型为NodePort
+  type: LoadBalancer
+  selector: #通过标签选择器去查询对应版本的pod，最后组成一个service
+    app: nginxtest
+  ports: #指定容器需要用到的端口列表
+    #指定端口名称 
+    - name: http
+      #服务对外的端口
+      port: 80
+      protocol: TCP
+      #容器的端口
+      targetPort: 80
+      nodePort: 32001

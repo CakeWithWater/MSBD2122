@@ -1,0 +1,17 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://gateway.openfaas.svc.cluster.local:8080 
+functions:
+  image-resize-redis:
+    lang: node12
+    handler: ./image-resize-redis
+    image: cakewithwater/sandbox:image-resize-redis-v1
+    environment:
+      write_timeout: 2m30s
+      read_timeout: 2m
+      exec_timeout: 2m
+      handler_wait_duration: 1m30s
+      healthcheck_interval: 5s
+  
+

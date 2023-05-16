@@ -1,0 +1,3 @@
+Module: https://tfhub.dev/google/openimages_v4/ssd/mobilenet_v2/1
+Download Time: 2022-04-17 23:44:28.899638
+Downloader Hostname: LAPTOP-PREQ0CHO (PID:13139)

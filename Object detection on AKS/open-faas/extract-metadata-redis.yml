@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://gateway.openfaas.svc.cluster.local:8080
+functions:
+  extract-metadata-redis:
+    lang: node12
+    handler: ./extract-metadata-redis
+    image: cakewithwater/sandbox:extract-metadata-redis-v1
+

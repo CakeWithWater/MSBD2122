@@ -1,0 +1,25 @@
+{
+          "creationTime": Date(metadata_exif.exif.DateTimeOriginal),
+          "geo": {
+            "latitude": {
+              "D": metadata_exif.gps.GPSLatitude[0],
+              "M": metadata_exif.gps.GPSLatitude[1],
+              "S": metadata_exif.gps.GPSLatitude[2],
+              "Direction": metadata_exif.gps.GPSLatitudeRef
+            },
+            "longitude": {
+              "D": metadata_exif.gps.GPSLongitude[0],
+              "M": metadata_exif.gps.GPSLongitude[1],
+              "S": metadata_exif.gps.GPSLongitude[2],
+              "Direction": metadata_exif.gps.GPSLongitudeRef
+            }
+          },
+          "exifMake": metadata_exif.image.Make,
+          "exifModel": metadata_exif.image.Model,
+          "dimensions": {
+            "width": metadata.width,
+            "height": metadata.height
+          },
+          "fileSize": metadata.size,
+          "format": metadata.format
+        };
