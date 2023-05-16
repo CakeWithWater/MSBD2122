@@ -1,9 +1,9 @@
 # Object Detection on AKS  
 
 Team members:  
-* CHEUNG Ka Sing 20824804 kscheungaq@connect.ust.hk  
-* WU Rinigong 20806826 rwuam@connect.ust.hk  
-* ZHU Huanqi 20786002 hzhuay@connect.ust.hk  
+* CHEUNG Ka Sing 
+* WU Rinigong  
+* ZHU Huanqi 
 
 Canvas Group:  
 * 10
