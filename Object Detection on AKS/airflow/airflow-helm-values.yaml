@@ -1,0 +1,24 @@
+airflow:
+  config:
+    AIRFLOW__API__AUTH_BACKEND: "airflow.api.auth.backend.basic_auth"
+    AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "True"    
+  connections:
+    - id: openfaas
+      type: http
+      description: openfaas connection
+      host: gateway.openfaas.svc.cluster.local
+      port: 8080
+    - id: pgsql
+      type: postgres
+      host: pgsql-postgresql.pgsql.svc.cluster.local
+      port: 5432
+      login: postgres
+      password: EnyOLp1iuG
+  image:
+    repository: cakewithwater/sandbox
+    tag: airflow-vf
+    pullSecret: regcred
+web:
+  service:
+    type: LoadBalancer      
+    externalPort: 8081
