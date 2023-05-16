@@ -1,24 +1,13 @@
 # Object Detection on AKS  
 
 Team members:  
-* CHEUNG Ka Sing
-* WU Rinigong 
-* ZHU Huanqi
+
 
 Canvas Group:  
 * 10
 
 ## Contributions
-* CHEUNG Ka Sing:  
-  Coordinator; Owner and manager of Kubernetes cluster; Designer of overall application architecture; Developer of image processing backend; Manager of deployment and usage of infrastructure (Apache Airflow, Open FaaS, Redis)
-  
-* WU Rinigong
 
-  Team member; Collaborator of Kubernetes cluster; Presentation and report participator; Video editor; Manager of deployment and usage of infrastructure (PostgreSQL)
-
-* ZHU Huanqi
-
-  Developer of Vue frontend website, nginx docker image, backend program and corresponding docker image; Presentation and report participator;  Manager of deployment and usage of infrastructure (Frontend and part of Backend)
 
 ## Main tools used (other than Docker)
 - kubectl (https://kubernetes.io/docs/tasks/tools/#kubectl)
