@@ -1,13 +1,6 @@
 # Object Detection on AKS  
 
-Team members:  
-
-
-Canvas Group:  
-* 10
-
-## Contributions
-
+The following is an open-source equivalent of Image Recognition serverless application from AWS Samples (https://github.com/aws-samples/lambda-refarch-imagerecognition)
 
 ## Main tools used (other than Docker)
 - kubectl (https://kubernetes.io/docs/tasks/tools/#kubectl)
